@@ -105,8 +105,7 @@ NSString *URL =@"http://www.qinto.com/wap/index.php?ctl=article_cate&act=api_app
 
 //手动获取缓存
 NSDictionary *cache = [XHNetworkCache cacheJsonWithURL:URL];
-//缓存取数据
-_cacheDataLab.text = [self toJSONString:cache];
+//To Do...
 
 NSLog(@"缓存:\n%@",cache);
 
@@ -116,7 +115,7 @@ NSLog(@"缓存:\n%@",cache);
 NSLog(@"success:%@\n",responseObject);
 
 //刷新数据
-_requestDataLab.text = [self toJSONString:responseObject];
+//To Do...
 
 //手动写入/更新缓存
 [XHNetworkCache saveJsonResponseToCacheFile:responseObject andURL:URL];
