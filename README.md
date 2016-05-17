@@ -1,14 +1,6 @@
 # XHNetworking
 * 基于AFNNetworking 3.x 的轻量级数据请求框架,支持数据自动/手动缓存
 
-##  导入:
------手动添加:<br>
-*    1.手动添加 XHNetworking 文件夹添加到工程目录中<br>
-*    2.添加AFNNetworking 3.x 到工程目录中
-
------CocoaPods 导入:<br>
-*    pod 'XHNetworking'
-
 ## 使用方法:
 ### 1.数据请求+自动缓存
 ```objc
@@ -137,3 +129,22 @@ NSLog(@"error:%@\n",error);
 }];
 
 ```
+
+##  安装
+### 手动添加:<br>
+*   1.将XHNetworking 文件夹添加到工程目录中<br>
+*   2.添加AFNNetworking 3.x 到工程目录中<br>
+*   3.导入XHNetworking.h
+
+### CocoaPods<br>
+*   1.在 Podfile 中添加 pod 'XHNetworking'<br>
+    2.执行 pod install 或 pod update<br>
+    3.导入 <XHNetworking.h>
+
+##  系统要求
+*   该项目最低支持 iOS 7.0 和 Xcode 7.0
+
+##  许可证
+    XHNetworking 使用 MIT 许可证，详情见 LICENSE 文件
+
+
