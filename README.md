@@ -2,12 +2,12 @@
 * 基于AFNNetworking 3.x 的轻量级数据请求框架,支持数据自动/手动缓存
 
 ##  导入:
-### 手动导入:
-*1. 手动添加 XHNetworking 文件夹添加到工程目录中<br>
-*2. 导入添加AFNNetworking 3.x 到工程目录中
+* 手动添加:<br>
+* 1.手动添加 XHNetworking 文件夹添加到工程目录中<br>
+* 2.添加AFNNetworking 3.x 到工程目录中
 
-### CocoaPods 导入:
-*1. pod 'XHNetworking'
+* CocoaPods 导入:<br>
+* pod 'XHNetworking'
 
 ## 使用方法:
 ### 1.数据请求+自动缓存
