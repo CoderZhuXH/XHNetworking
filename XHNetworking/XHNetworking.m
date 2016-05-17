@@ -4,7 +4,7 @@
 //
 //  Created by xiaohui on 15/10/29.
 //  Copyright © 2015年 qiantou. All rights reserved.
-//
+//  https://github.com/CoderZhuXH/XHNetworking
 
 #import "XHNetworking.h"
 #import <CommonCrypto/CommonDigest.h>
