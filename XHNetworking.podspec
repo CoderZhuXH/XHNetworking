@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = "XHNetworking/*.{h,m}"
   s.requires_arc = true
   s.dependency "AFNetworking", "~> 3.0.4"
+  
 end
