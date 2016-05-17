@@ -29,16 +29,18 @@
 +(BOOL)saveJsonResponseToCacheFile:(id)jsonResponse andURL:(NSString *)URL
 {
     NSDictionary *json = jsonResponse;
-    BOOL success;
     if(json!=nil)
     {
-        success =[NSKeyedArchiver archiveRootObject:jsonResponse toFile:[self cacheFilePathWithURL:URL]];
+        BOOL state =[NSKeyedArchiver archiveRootObject:jsonResponse toFile:[self cacheFilePathWithURL:URL]];
+        if(state)
+        {
+            DebugLog(@"缓存写入/更新成功");
+        }
+        
+        return state;
     }
-    if(success)
-    {
-        DebugLog(@"缓存写入/更新成功");
-    }
-    return success;
+    
+    return NO;
 }
 
 +(id )cacheJsonWithURL:(NSString *)URL
@@ -176,9 +178,9 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         success(responseObject);
-
+        
         [XHNetworkCache saveJsonResponseToCacheFile:responseObject andURL:URL];
-
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         DebugLog(@"error=%@",error);
@@ -220,7 +222,7 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         success(responseObject);
-      
+        
         [XHNetworkCache saveJsonResponseToCacheFile:responseObject andURL:URL];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
