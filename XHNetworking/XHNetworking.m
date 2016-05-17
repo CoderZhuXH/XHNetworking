@@ -29,16 +29,16 @@
 +(BOOL)saveJsonResponseToCacheFile:(id)jsonResponse andURL:(NSString *)URL
 {
     NSDictionary *json = jsonResponse;
-    BOOL state;
+    BOOL success;
     if(json!=nil)
     {
-        state =[NSKeyedArchiver archiveRootObject:jsonResponse toFile:[self cacheFilePathWithURL:URL]];
+        success =[NSKeyedArchiver archiveRootObject:jsonResponse toFile:[self cacheFilePathWithURL:URL]];
     }
-    if(state)
+    if(success)
     {
         DebugLog(@"缓存写入/更新成功");
     }
-    return state;
+    return success;
 }
 
 +(id )cacheJsonWithURL:(NSString *)URL
