@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CacheViewController">
+            <connections>
+                <outlet property="cacheDataLab" destination="XWd-FM-era" id="nXz-D9-tV7"/>
+                <outlet property="requestDataLab" destination="XdM-WY-xw0" id="841-ZV-mIR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWd-FM-era">
+                    <rect key="frame" x="0.0" y="85" width="320" height="200"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="qKh-mQ-JhS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="缓存数据:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6L-kj-376">
+                    <rect key="frame" x="0.0" y="64" width="320" height="21"/>
+                    <color key="backgroundColor" red="0.25327555639999999" green="0.71713226009999997" blue="0.1231650745" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5vg-zx-1zS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-WY-xw0">
+                    <rect key="frame" x="0.0" y="306" width="320" height="262"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请求数据:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ING-V3-hdu">
+                    <rect key="frame" x="0.0" y="285" width="320" height="21"/>
+                    <color key="backgroundColor" red="0.25327555639999999" green="0.71713226009999997" blue="0.1231650745" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5Lj-Ik-Xbp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XWd-FM-era" firstAttribute="top" secondItem="b6L-kj-376" secondAttribute="bottom" id="8iK-Eh-XDE"/>
+                <constraint firstAttribute="trailing" secondItem="XWd-FM-era" secondAttribute="trailing" id="Efp-bv-uOL"/>
+                <constraint firstItem="XdM-WY-xw0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mck-lA-skw"/>
+                <constraint firstItem="b6L-kj-376" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Omt-ws-4xu"/>
+                <constraint firstAttribute="trailing" secondItem="XdM-WY-xw0" secondAttribute="trailing" id="WlO-ps-8GB"/>
+                <constraint firstAttribute="trailing" secondItem="ING-V3-hdu" secondAttribute="trailing" id="Z0L-v3-VlS"/>
+                <constraint firstAttribute="trailing" secondItem="b6L-kj-376" secondAttribute="trailing" id="cJO-5i-lVU"/>
+                <constraint firstItem="XdM-WY-xw0" firstAttribute="top" secondItem="ING-V3-hdu" secondAttribute="bottom" id="lu3-Ki-cLW"/>
+                <constraint firstItem="XWd-FM-era" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pR1-W0-DC7"/>
+                <constraint firstItem="ING-V3-hdu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qlT-Tr-sNc"/>
+                <constraint firstItem="ING-V3-hdu" firstAttribute="top" secondItem="XWd-FM-era" secondAttribute="bottom" id="tUj-70-hY0"/>
+                <constraint firstAttribute="bottom" secondItem="XdM-WY-xw0" secondAttribute="bottom" id="xgW-bq-JJr"/>
+                <constraint firstItem="b6L-kj-376" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="zMa-mG-tAS"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="240" y="363"/>
+        </view>
+    </objects>
+</document>
