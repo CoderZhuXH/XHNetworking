@@ -132,14 +132,14 @@ NSLog(@"error:%@\n",error);
 
 ##  安装
 ### 手动添加:<br>
-*   1.将XHNetworking 文件夹添加到工程目录中<br>
-*   2.添加AFNNetworking 3.x 到工程目录中<br>
-*   3.导入XHNetworking.h
+*   1.将 XHNetworking 文件夹添加到工程目录中<br>
+*   2.添加 AFNNetworking 3.x 到工程目录中<br>
+*   3.导入 XHNetworking.h
 
 ### CocoaPods<br>
 *   1.在 Podfile 中添加 pod 'XHNetworking'<br>
     2.执行 pod install 或 pod update<br>
-    3.导入 <XHNetworking.h>
+    3.导入 XHNetworking.h
 
 ##  系统要求
 *   该项目最低支持 iOS 7.0 和 Xcode 7.0
