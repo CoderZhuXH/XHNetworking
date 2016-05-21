@@ -64,7 +64,7 @@
         
         //缓存
         NSLog(@"缓存:\n%@",cache);
-        //缓存取数据
+        //缓存数据显示
         _cacheDataLab.text = [self toJSONString:cache];
         
     } success:^(id responseObject) {
@@ -91,7 +91,7 @@
         
         //缓存
         NSLog(@"缓存:\n%@",cache);
-        //缓存取数据
+        //缓存数据显示
         _cacheDataLab.text = [self toJSONString:cache];
         
     } success:^(id responseObject) {
