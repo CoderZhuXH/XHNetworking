@@ -3,7 +3,7 @@
 
 ## 写在最前
 *  默认使用的"请求数据类型"为:HTTP<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"返回结果类型"为:JSON<br>
+   &nbsp;"返回结果类型"为:JSON<br>
 *  若需修改,请在XHNetworking.m 文件,+(AFHTTPSessionManager *)createManager 中进行配置
    
 ## 使用方法:
