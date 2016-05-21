@@ -2,9 +2,11 @@
 * 基于AFNNetworking 3.x 的轻量级数据请求框架,支持数据自动/手动缓存--支持CocoaPods
 
 ## 写在最前:
-*  默认使用的"请求数据类型"为:HTTP<br>
-   &nbsp &nbsp "返回结果类型"为:JSON<br>
-*  若需修改,请在XHNetworking.m 文件,+(AFHTTPSessionManager *)createManager 中进行配置
+*  默认使用: <br>
+   `请求数据类型` 为:`HTTP` <br>
+   `返回结果类型`为:`JSON` <br>
+*  若需修改:<br>
+   请在`XHNetworking.m` 文件,`+(AFHTTPSessionManager *)createManager` 中进行配置
    
 ## 使用方法:
 ### 1.数据请求+自动缓存
